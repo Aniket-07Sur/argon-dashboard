@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 
-export default function Success({ user }) {
+export default function Success() {
     const [data, setData] = useState([]);
     const [loading, Setloading] = useState(false);
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function Success({ user }) {
         return (
             <div className="row">
                 <div className="center container">
-                    <h1 className="heading">Hello, {user?.email} you are succcesfullly logged in</h1>
+                    <h1 className="heading">Hello, you are succcesfullly logged in</h1>
                 </div>
                 {
                     data.map((item, uid) => (

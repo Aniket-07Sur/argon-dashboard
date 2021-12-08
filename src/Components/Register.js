@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { auth } from '../Firebase'
 import { useHistory } from 'react-router'
-export default function Register(props) {
+export default function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const history = useHistory();
@@ -23,7 +23,7 @@ export default function Register(props) {
             <h1>Please Register</h1>
             <form onSubmit={(e) => handleSubmit(e)}>
                 <div className="input-field ">
-                    <input type="text" placeholder="Enter your name" onChange={(e) => props.setName(e.target.value)} />
+                    <input type="text" placeholder="Enter your name"/>
                     <input type="email" placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} />
                     <input type="password" placeholder="Enter your password" onChange={(e) => setPassword(e.target.value)} />
                 </div>
