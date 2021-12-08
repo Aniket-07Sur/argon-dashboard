@@ -42,14 +42,6 @@ export default function Success({ user }) {
                     )
                 }
             </div>
-
-
         );
     }
-    // return (
-    //     <div className="center container">
-    //         <h1 className="heading">Hello, {user?.email} you are succcesfullly logged in</h1>
-    //         <h3 className="heading">Uploading details soon , stay tuned </h3>
-    //     </div>
-    // )
 }
